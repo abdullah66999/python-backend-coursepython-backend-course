@@ -1,0 +1,9 @@
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+
+load_dotenv()
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+DB_PATH = Path(os.getenv("BOT_DB_PATH", "bot.db"))
